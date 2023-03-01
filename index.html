@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web CV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+            <div id="app-container" class="flex-container-column">
+                <div id="navbar" class="flex-container flex-centered flex-between gap-md padding-sm">
+                    <a href="#informacion-personal">Información</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#habilidades">Habilidades</a>
+                    
+                </div>
+
+                <div id="informacion-personal" class="flex-container flex-wrap flex-centered gap-md padding-md ">
+                    <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="foto-personal" id="img-perfil">
+                    <div id="datos-personales">
+                        <h1>Tracy Oliver</h1>
+                        <p><i class="personal-data-icon fa-solid fa-user"></i> 7/1/1985</p>
+                        <p><i class="personal-data-icon fa-solid fa-house"></i> 9062 Camden Avenue</p>
+                        <p><i class="personal-data-icon fa-solid fa-phone"></i> (553) 206-7930</p>
+                        <p><i class="personal-data-icon fa-solid fa-envelope"></i> tracy.oliver@example.com</p>
+                    </div>
+                </div>
+
+                <div class="flex-container flex-wrap flex-centered gap-md padding-md">
+                    <div id="experiencia" class="flex-container flex-centered flex-wrap gap-md recuadro">
+                        <div class="fixed-container">
+                            <h2>Experiencia Laboral</h2>
+                            <ul>
+                                <li><span class="bold-text">2005-2013: </span>Ventas en Call Center</li>
+                                <li><span class="bold-text">2013-2022: </span>Administrativa en Empresa de Venta de Inmuebles</li>
+                                <li><span class="bold-text">2022-presente: </span>Front End en Empresa de Desarrollo Web</li>
+                            </ul>
+                        </div>
+                        <div id="imagenes-exp-laboral" class="flex-container flex-centered">
+                            <button class="button-arrow left-arrow"><</button>
+                            <img src="./imgs/habilidades-call-center.jpg" class="img-example" alt="">
+                            <button class="button-arrow right-arrow">></button>
+                        </div>
+
+                    </div>
+    
+                    <div id="habilidades" class="flex-container-column flex-centered gap-md">
+                        <div id="habilidades-duras" class="flex-container flex-centered flex-wrap gap-md recuadro">
+                            <div class="fixed-container">
+                                <h2>Habilidades</h2>
+                                <ul>
+                                    <li>Front End: HTML, CSS, Javascript</li>
+                                    <li>Base de datos: SQL</li>
+                                    <li>Oficina: Word, Excel, Access</li>
+                                </ul>
+                            </div>
+                            <div id="imagenes-hab-duras" class="flex-container flex-centered">
+                                <button class="button-arrow left-arrow"><</button>
+                                <img src="./imgs/html.png" class="img-example" alt="">
+                                <button class="button-arrow right-arrow">></button>
+                            </div>
+                        </div>
+                        <div id="habilidades-blandas" class="flex-container flex-centered flex-wrap gap-md recuadro">
+                            <div class="fixed-container">
+                                <h2>Habilidades blandas</h2>
+                                <ul>
+                                    <li>Buena comunicación verbal.</li>
+                                    <li>Capacidad organizativa.</li>
+                                    <li>Facilidad para trabajar en equipo.</li>
+                                </ul>
+                            </div>
+                            <div id="imagenes-hab-blandas" class="flex-container flex-centered">
+                                <button class="button-arrow left-arrow"><</button>
+                                <img src="./imgs/comunicacion-verbal-y-no-verbal.jpg" class="img-example" alt="">
+                                <button class="button-arrow right-arrow">></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
